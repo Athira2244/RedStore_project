@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="../styles/cart.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../assets/images/logo.png" width="100px" />
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="./account.html">Account</a></li>
+          <li>
+            <a href="cart.html"><img src="../assets/images/cart.png" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="table">
+        <table cellpadding="8px">
+          <thead>
+            <tr id="row1">
+              <th width="60%">Product</th>
+              <th width="5%">Quantity</th>
+              <th align="right">SubTotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="row2">
+              <td id="col1">
+                <img src="../assets/images/gallery-1.jpg" /><span
+                  ><p>product-name</p>
+                  <p>price:</p>
+                  <a href="#">Remove</a></span
+                >
+              </td>
+              <td>
+                <input type="number" value="1" step="1" />
+              </td>
+              <td id="col3">price</td>
+            </tr>
+            <tr id="row2">
+              <td id="col1">
+                <img src="../assets/images/gallery-1.jpg" /><span
+                  ><p>product-name</p>
+                  <p>price:</p>
+                  <a href="#">Remove</a></span
+                >
+              </td>
+              <td>
+                <input type="number" value="1" step="1" />
+              </td>
+              <td id="col3">price</td>
+            </tr>
+            <tr id="row2">
+              <td id="col1">
+                <img src="../assets/images/gallery-1.jpg" /><span
+                  ><p>product-name</p>
+                  <p>price:</p>
+                  <a href="#">Remove</a></span
+                >
+              </td>
+              <td>
+                <input type="number" value="1" step="1" />
+              </td>
+              <td id="col3">price</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th></th>
+              <th colspan="2">
+                <hr align="right" />
+                <p>SubTotal</p>
+                <p>Tax</p>
+                <p>Total</p>
+                <button>Proceed to Checkout &rarr;</button>
+              </th>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

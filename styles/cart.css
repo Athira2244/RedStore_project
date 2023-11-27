@@ -1,0 +1,90 @@
+:root {
+  --hue-color: 26.03;
+  --theme-secondary: hsl(var(--hue-color), 100%, 48%);
+  --button-hover: hsl(var(--hue-color), 100%, 64%);
+  --head-color: hsl(var(--hue-color), 100%, 50%);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+/* navbar */
+nav {
+  position: sticky;
+  right: 0;
+  left: 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px 5px 0px 5px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+nav li a img {
+  width: 25px;
+}
+/* end of navbar */
+
+table {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  margin-top: 60px;
+}
+table #row1 {
+  background-color: var(--head-color);
+  color: white;
+  height: 35px;
+  text-align: left;
+}
+table #col1 {
+  display: flex;
+  justify-content: flex-start;
+}
+table span {
+  margin-left: 12px;
+}
+table img {
+  width: 20%;
+  object-fit: cover;
+  /* height: 100px; */
+}
+table input {
+  height: 25px;
+  width: 28px;
+}
+.table hr {
+  width: 100%;
+  border: 2px solid var(--head-color);
+}
+.table #col3 {
+  padding-right: 10px;
+  text-align: right;
+}
+tfoot p {
+  text-align: left;
+}
+tfoot button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--head-color);
+  color: white;
+  float: right;
+}
+table tr a {
+  color: var(--head-color);
+}
