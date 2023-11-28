@@ -27,40 +27,35 @@
     <main>
       <section class="accounts">
         <img src="../assets/images/image1.png" />
-        <div class="col2" style="width: 20%; height: 350px;">
+        <div class="col2" style="width: 25%; height: 350px;">
           
           <div class="heading">
-            <button>Login</a></button>
-            <button>Register</button>
+            <button onclick="login()">Login</a></button>
+            <button onclick="register()">Register</button>
             <!-- <hr id="hr1" /> -->
+          </div>
             <section class="login " id="log">
               <form>
-                <input type="text" placeholder="username" />
+                <input type="text" placeholder="username" /><br />
                 <input type="password" placeholder="password" /><br />
-                <button>Login</button>
+                <button>Login</button><br />
+                <a href="#">Forgot password?</a>
               </form>
-              <a href="#">Forgot password?</a>
+              
             </section>
-          </div>
+            <section class="register" id="reg" style="display: none;">
+              <form>
+                <input type="text" placeholder="username" /><br />
+                <input type="email" placeholder="Email" /><br />
+                <input type="password" placeholder="password" /><br />
+                <button>Register</button>
+              </form>
+            </section>
+          
           
         </div>
       </section>
-      <!-- <section class="login " id="log">
-        <form>
-          <input type="text" placeholder="username" />
-          <input type="password" placeholder="password" /><br />
-          <button>Login</button>
-        </form>
-        <a href="#">Forgot password?</a>
-      </section>
-      <section class="register" id="reg">
-          <form>
-            <input type="text" placeholder="username" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="password" /><br />
-            <button>Register</button>
-          </form>
-        </section> -->
+       
     </main>
     <footer>
       <div class="footer">
@@ -104,5 +99,18 @@
       <p id="p4"><a href="#">Copyright 2020 - Easy Tutorials</a></p>
     </footer>
     <!--------end of footer------------->
+    <script>
+      function login()
+      {
+        document.getElementById("log").style.display="block"
+        document.getElementById("reg").style.display="none"
+      }
+      function register()
+      {
+        document.getElementById("reg").style.display="block"
+        document.getElementById("log").style.display="none"
+      }
+    </script>
   </body>
 </html>
+
